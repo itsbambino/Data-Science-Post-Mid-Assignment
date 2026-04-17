@@ -9,9 +9,10 @@ Web Scraping Assignment
 
 ### 2. Setup Instructions
 1. Clone this repo: `git clone [https://github.com/itsbambino/Data-Science-Post-Mid-Assignment]`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run script: `DS assignment.ipynb`
+2. Install dependencies: `pip install -r requirements.txt.`
+3. Run script: `DS assignment.ipynb.`
 
 ### 3. Challenges & Solutions
 * **Challenge:** The website uses "Lazy Loading," which only loads the first 14 rows of data in the initial HTML, making it impossible to scrape 100 rows using standard request libraries.
 * **Solution:** I integrated **Selenium** to automate a headless Chrome browser. I wrote a script to execute JavaScript commands that scrolled the page down incrementally, triggering the website to load the full list of 100 coins before capturing the page source for parsing.
+* I used Beautiful Soup before, but it was not giving me the number of rows I wanted and was causing some errors, which made me switch to Selenium. I faced some problems with wrapping the columns as well.
